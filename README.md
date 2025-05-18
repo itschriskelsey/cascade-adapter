@@ -1,8 +1,11 @@
 Caskade Programming Language Adapter Integration Guide
 
 Created on May 18, 2025
+
 By Chris Kelsey of Blue Vision Studios
+
 Introduction
+
 The Caskade Programming Language Adapter provides an efficient, standardized way to implement custom Boolean logic in various programming languages. These adapters built for each major programming language allow you to simplify logic in your program and can even be integrated into hardware-level computations to generate power efficiently for CPUs.
 
 C (C Adapter)
