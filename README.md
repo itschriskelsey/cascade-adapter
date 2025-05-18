@@ -123,6 +123,27 @@ Performance and Power Considerations
 
 Go’s concurrency model and efficiency make it ideal for CPU-based systems. By integrating the Caskade logic, you can optimize computation and reduce CPU load.
 
+How to Use in Your VHDL Project
+library ieee;
+use ieee.std_logic_1164.all;
+use work.caskade_adapter.all;
+
+entity example is
+  port (
+    a : in caskade_bool;
+    b : in caskade_bool;
+    res : out caskade_bool
+  );
+end example;
+
+architecture rtl of example is
+begin
+  process(a, b)
+  begin
+    res <= AND(a, b);  -- Use Caskade AND logic
+  end process;
+end rtl;
+
 Integrating the Adapters into Hardware-Based Systems
 When implementing these adapters in embedded systems or CPU designs, the optimized Boolean logic can be directly translated to hardware-level logic operations. This could help in:
 
